@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1 style="font-size: 3rem">Contact Us</h1>
+      <form class="form">
+        <section class="name">
+          <div class="firstName">
+            <p class="fn">First Name *</p>
+            <input type="text" class="input-name" required />
+            <p id="display1">Enter valid name!</p>
+          </div>
+          <div class="lastName">
+            <p class="fn">Last Name *</p>
+            <input type="text" class="input-Lname" required />
+            <p id="display2">Enter valid name!</p>
+          </div>
+        </section>
+        <section class="email">
+          <p>Email Id *</p>
+          <input type="email" id="input-email" required />
+          <p id="display3">Enter valid Email Id!</p>
+        </section>
+        <section class="query">
+          <p>Query Type *</p>
+          <div class="field">
+            <div class="general">
+              <input type="radio" id="ge" required />
+              <p>General Enquiry</p>
+            </div>
+            <div class="support">
+              <input type="radio" id="su" required />
+              <p>Support Request</p>
+            </div>
+          </div>
+          <p id="display4">Please select Query Type!</p>
+        </section>
+        <section class="message">
+          <p>Message</p>
+          <textarea id="text" rows="4" cols="30"></textarea>
+          <p id="display5">Enter valid Format!</p>
+        </section>
+        <section class="consent">
+          <div class="last">
+            <input type="checkbox" id="final" required />
+            <p>I consent being contacted by team</p>
+          </div>
+
+          <p id="display6">To submit form,please check the box!</p>
+        </section>
+        <section class="button">
+          <button id="btn">Submit</button>
+        </section>
+      </form>
+    </main>
+    <div class="notification">
+      <div id="user">
+        <img src="assets/images/icon-success-check.svg" alt="submit" />
+        <p>Message Sent !!</p>
+      </div>
+      <p>Thanks for completting the form,We'll contact u soon</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
